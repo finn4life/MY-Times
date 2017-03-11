@@ -1,14 +1,16 @@
+/* header section */
 header {
   display: flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   width: 100%;
-  height: 80px;
+  height: 70px;
   align-items: center;
   z-index: 1;
   position: fixed;
   border-bottom: 1px solid black;
+  background-color: white;
 }
 .logo {
   display: flex;
@@ -35,5 +37,18 @@ nav a {
   justify-content: flex-end;
   padding: 20px 10px;
   color: black;
+
+}
+
+/* body content */
+.leadstory, .story, .ministory, .bites {
+  z-index: 2;
+  border: 1px solid black;
+}
+
+.story {
+
+}
+.ministory {
 
 }
