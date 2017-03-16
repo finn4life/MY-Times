@@ -5,13 +5,16 @@ header {
   font-size: 14px;
   font-weight: bold;
   width: 100%;
-  height: 70px;
+  height: 80px;
   align-items: center;
   z-index: 1;
   position: fixed;
   border-bottom: 1px solid black;
   background-color: white;
+  margin-top: -20px;
+  padding-top: 15px;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -35,20 +38,123 @@ nav {
 nav a {
   display: inline-block;
   justify-content: flex-end;
-  padding: 20px 10px;
+  padding: 10px 10px;
   color: black;
 
 }
 
 /* body content */
-.leadstory, .story, .ministory, .bites {
+.content {
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
   z-index: 2;
-  border: 1px solid black;
 }
 
-.story {
-
+.leadstory, .story, .ministory, .bites {
+  display: flex;
+  margin: 0 10px 10px 0px;
+  flex-direction: column;
 }
-.ministory {
 
+.leadstory {
+  flex-direction: column;
+}
+
+.firstcolumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 630px;
+}
+
+.columnone {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 560px;
+  flex-wrap: wrap;
+}
+
+.secondcolumn {
+  width: 300px;
+  flex-direction: column;
+}
+
+.thirdcolumn {
+  width: 240px;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.leadstory, .ministory {
+  display: flex;
+}
+
+#leadimage {
+  background-image: url("./img-story-main.png");
+  font-size: 40px;
+  flex-wrap: wrap;
+}
+
+#earthimage {
+  background-image: url("./img-story-2.png");
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#cameraimage {
+  position: relative;
+  background-image: url("./img-story-3.png");
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#catimage {
+  background-image: url("./img-story-1.png");
+}
+
+.text {
+  display: block;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.image {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+}
+
+.bitetext {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#links {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  font-weight: normal;
+}
+
+#links p {
+  border-bottom: 1px solid black;
+  height: 30px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
